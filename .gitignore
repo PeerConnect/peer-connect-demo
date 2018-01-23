@@ -1,0 +1,9 @@
+package-lock.json
+.eslintrc.js
+node_modules
+.DS_Store
+.DS_Store?
+*.log
+npm-debug.log*
+dist
+assets/videos
