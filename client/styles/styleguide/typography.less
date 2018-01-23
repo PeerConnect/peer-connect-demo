@@ -1,25 +1,19 @@
 // Font Family
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 
-@source-sans-pro: 'Source Sans Pro', sans-serif;
-@lato: 'Lato', sans-serif;
+@open-sans: 'Open Sans', sans-serif;
+@raleway: 'Raleway', sans-serif;
 
-.lato {
-	font-family: @lato;
+.raleway {
+	font-family: @raleway;
 	letter-spacing: .9px;
 }
 
-.source-sans-pro {
-	font-family: @source-sans-pro;
+.open-sans {
+	font-family: @open-sans;
 	// letter-spacing: 1.85px;
 }
-
-
-.icon {
-	letter-spacing: 0;
-}
-
 
 // Font Sizes (target / base)
 @basefontsize: 16px;
@@ -152,7 +146,7 @@ strong, .strong {
 // Underlines
 .underline {
 	height: 2px;
-	background: @br1;
+	background: @gr0;
 	margin: 0 auto;
 }
 
@@ -175,7 +169,7 @@ strong, .strong {
 // Links
 a,
 .link {
-	color: @gr1;
+	color: @r0;
 	font-weight: @fw600;
 	text-decoration: none;
 
@@ -184,7 +178,7 @@ a,
 	transition: color 0.3s;
 
 	&:hover {
-		color: @gr2;
+		color: @r1;
 		text-decoration: none;
 	}
 	&:hover, &:active, &:focus {
