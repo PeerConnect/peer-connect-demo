@@ -8,13 +8,11 @@ import Team from './Team/Team.jsx'
 
 const App = () =>
   (
-    <div>
-      <div id="app-container">
-        <Title />
-        <Features />
-        <GetStarted />
-        <Team />
-      </div>
+    <div id="app-container">
+      <Title />
+      <Features />
+      <GetStarted />
+      <Team />
     </div>
   );
 
