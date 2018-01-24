@@ -6,6 +6,7 @@ import Campaign from './Campaign/Campaign.jsx'
 import GetStarted from './GetStarted/GetStarted.jsx'
 import Features from './Features/Features.jsx'
 import Team from './Team/Team.jsx'
+import Footer from './Footer/Footer.jsx'
 
 const App = () =>
   (
@@ -15,6 +16,7 @@ const App = () =>
       <Features />
       <GetStarted />
       <Team />
+      <Footer />
     </div>
   );
 
