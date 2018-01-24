@@ -18629,21 +18629,21 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(2);
 
-var _doge = __webpack_require__(34);
+var _mike = __webpack_require__(51);
 
-var _doge2 = _interopRequireDefault(_doge);
+var _mike2 = _interopRequireDefault(_mike);
 
-var _raccoon = __webpack_require__(35);
+var _justin = __webpack_require__(49);
 
-var _raccoon2 = _interopRequireDefault(_raccoon);
+var _justin2 = _interopRequireDefault(_justin);
 
-var _kitten = __webpack_require__(36);
+var _jim = __webpack_require__(48);
 
-var _kitten2 = _interopRequireDefault(_kitten);
+var _jim2 = _interopRequireDefault(_jim);
 
-var _honey_badger = __webpack_require__(37);
+var _peter = __webpack_require__(50);
 
-var _honey_badger2 = _interopRequireDefault(_honey_badger);
+var _peter2 = _interopRequireDefault(_peter);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18654,8 +18654,8 @@ var Team = function Team() {
     _react2.default.createElement('a', { name: 'team' }),
     _react2.default.createElement(
       'h2',
-      null,
-      'Meet the Members!'
+      { className: 'fw-600 margin-top margin-bottom-m raleway text-center' },
+      'Meet the Team'
     ),
     _react2.default.createElement(
       'div',
@@ -18664,80 +18664,92 @@ var Team = function Team() {
         'div',
         { className: 'member' },
         _react2.default.createElement(
-          'h4',
-          null,
-          'Mike Gutierrez'
+          'div',
+          { className: 'img-container margin-bottom' },
+          _react2.default.createElement('img', { className: 'head-shot', style: { top: '-20px' }, src: _mike2.default })
         ),
         _react2.default.createElement(
-          'h6',
-          null,
-          'Software Engineer'
-        ),
-        _react2.default.createElement('img', { className: 'head-shot', 'data-src': _honey_badger2.default }),
-        _react2.default.createElement(
-          'p',
+          'div',
           { className: 'member-info' },
-          '*Place description here*'
+          _react2.default.createElement(
+            'h4',
+            { className: 'margin-0 fw-600' },
+            'Mike Gutierrez'
+          ),
+          _react2.default.createElement(
+            'h6',
+            { className: 'margin-0' },
+            'Software Engineer'
+          )
         )
       ),
       _react2.default.createElement(
         'div',
         { className: 'member' },
         _react2.default.createElement(
-          'h4',
-          null,
-          'Jim Kang'
+          'div',
+          { className: 'img-container margin-bottom' },
+          _react2.default.createElement('img', { className: 'head-shot', style: { top: '-20px' }, src: _jim2.default })
         ),
         _react2.default.createElement(
-          'h6',
-          null,
-          'Software Engineer'
-        ),
-        _react2.default.createElement('img', { className: 'head-shot', 'data-src': _doge2.default }),
-        _react2.default.createElement(
-          'p',
+          'div',
           { className: 'member-info' },
-          '*Place description here*'
+          _react2.default.createElement(
+            'h4',
+            { className: 'margin-0 fw-600' },
+            'Jim Kang'
+          ),
+          _react2.default.createElement(
+            'h6',
+            { className: 'margin-0' },
+            'Software Engineer'
+          )
         )
       ),
       _react2.default.createElement(
         'div',
         { className: 'member' },
         _react2.default.createElement(
-          'h4',
-          null,
-          'Justin Ko'
+          'div',
+          { className: 'img-container margin-bottom' },
+          _react2.default.createElement('img', { className: 'head-shot', style: { top: '-50px' }, src: _justin2.default })
         ),
         _react2.default.createElement(
-          'h6',
-          null,
-          'Software Engineer'
-        ),
-        _react2.default.createElement('img', { className: 'head-shot', 'data-src': _kitten2.default }),
-        _react2.default.createElement(
-          'p',
+          'div',
           { className: 'member-info' },
-          '*Place description here*'
+          _react2.default.createElement(
+            'h4',
+            { className: 'margin-0 fw-600' },
+            'Justin Ko'
+          ),
+          _react2.default.createElement(
+            'h6',
+            { className: 'margin-0' },
+            'Software Engineer'
+          )
         )
       ),
       _react2.default.createElement(
         'div',
         { className: 'member' },
         _react2.default.createElement(
-          'h4',
-          null,
-          'Peter Lee'
+          'div',
+          { className: 'img-container margin-bottom' },
+          _react2.default.createElement('img', { className: 'head-shot', style: { top: '-50px' }, src: _peter2.default })
         ),
         _react2.default.createElement(
-          'h6',
-          null,
-          'Software Engineer'
-        ),
-        _react2.default.createElement('img', { className: 'head-shot', 'data-src': _raccoon2.default }),
-        _react2.default.createElement(
-          'p',
+          'div',
           { className: 'member-info' },
-          '*Place description here*'
+          _react2.default.createElement(
+            'h4',
+            { className: 'margin-0 fw-600' },
+            'Peter Lee'
+          ),
+          _react2.default.createElement(
+            'h6',
+            { className: 'margin-0' },
+            'Software Engineer'
+          )
         )
       )
     )
@@ -18747,30 +18759,10 @@ var Team = function Team() {
 exports.default = Team;
 
 /***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "cccfd52c3356933f35eadcfdc625a43d.jpg";
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "b3c64f62314797287befea8ac198d423.jpg";
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "25c18e1a7356c3e3d5cc4b68242c32ca.jpg";
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "0d6909a3b674d40011c4388214337da4.jpg";
-
-/***/ }),
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18811,7 +18803,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ral
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);", ""]);
 
 // module
-exports.push([module.i, "#menu {\n  height: 65px;\n}\n#menu #logo-container {\n  width: 185px;\n  height: inherit;\n}\n#menu #logo-container #logo {\n  height: 55px;\n}\n#menu #navigation {\n  position: absolute;\n  right: 0;\n}\n#menu #navigation ul {\n  list-style: none;\n  font-size: 14px;\n}\n#menu #navigation ul li {\n  display: inline;\n}\n#campaign {\n  height: 600px;\n  flex-direction: column;\n}\n#campaign.gradient {\n  background-image: radial-gradient(#555A5F, black);\n}\n#get-started #instructions {\n  display: flex;\n  max-width: 500px;\n  flex-direction: column;\n}\n#get-started #instructions .instruction-bullet {\n  flex-direction: column;\n  align-items: left;\n}\n#get-started #instructions .instruction-bullet .instruction-icon-container {\n  line-height: 30px;\n}\n#get-started #instructions .instruction-bullet .instruction-icon-container .instruction-icon {\n  height: 30px;\n}\n#get-started #instructions .instruction-bullet .instruction-list {\n  list-style: none;\n}\n#get-started #instructions .instruction-bullet .instruction-list li {\n  margin-left: 45px;\n}\n#get-started #instructions .instruction-bullet .instruction-list li.direction {\n  margin-top: 5px;\n  margin-bottom: 15px;\n}\n#get-started #instructions .instruction-bullet .instruction-list li.code-block {\n  width: 100%;\n  margin-bottom: 15px;\n  font-weight: 300 !important;\n  background-color: #E5E2DE;\n  padding: 15px;\n  border-radius: 5px;\n  border: 1px solid #202020;\n  font: 12px/14px Monospace, sans-serif;\n}\n#get-started #instruction-graphic {\n  max-width: 300px;\n}\n#features {\n  flex-direction: column;\n  align-items: left;\n}\n#team {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  width: 75%;\n}\n#members {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n}\n.member {\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n}\n.member img {\n  max-width: 100px;\n  max-height: 100px;\n}\n/*! normalize.css v3.0.1 | MIT License | git.io/normalize */\n* {\n  box-sizing: border-box;\n}\nhtml {\n  size-adjust: 100%;\n}\nbody {\n  margin: 0;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nnav,\nsection,\nsummary {\n  display: block;\n}\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  vertical-align: baseline;\n}\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n[hidden],\ntemplate {\n  display: none;\n}\na {\n  background: transparent;\n}\na:active,\na:hover {\n  outline: 0;\n  cursor: pointer;\n}\nabbr[title] {\n  border-bottom: 1px dotted;\n}\nabbr {\n  text-decoration: none;\n  border-bottom: 0;\n}\nb,\nstrong {\n  font-weight: bold;\n}\ndfn {\n  font-style: italic;\n}\nmark {\n  background: #ff0;\n  color: #000;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsup {\n  top: -0.5em;\n}\nsub {\n  bottom: -0.25em;\n}\nimg {\n  border: 0;\n}\nsvg:not(:root) {\n  overflow: hidden;\n}\nfigure {\n  margin: 1em 40px;\n}\nhr {\n  box-sizing: content-box;\n  height: 0;\n}\npre {\n  overflow: auto;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  font: inherit;\n  margin: 0;\n}\nbutton {\n  overflow: visible;\n}\nbutton:hover,\nbutton:focus {\n  cursor: pointer;\n}\nbutton,\nselect {\n  text-transform: none;\n}\nbutton,\nhtml input[type=\"button\"] {\n  appearance: button;\n  cursor: pointer;\n}\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\nbutton input::focus-inner {\n  border: 0;\n  padding: 0;\n}\ninput {\n  line-height: normal;\n}\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  appearance: button;\n  cursor: pointer;\n}\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0;\n}\ninput[type=\"number\"]::inner-spin-button,\ninput[type=\"number\"]::outer-spin-button {\n  height: auto;\n}\ninput[type=\"search\"] {\n  box-sizing: border-box;\n  -webkit-appearance: none;\n  appearance: none;\n}\ninput[type=\"search\"]::search-cancel-button,\ninput[type=\"search\"]::search-decoration {\n  -webkit-appearance: none;\n  appearance: none;\n}\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\nlegend {\n  border: 0;\n  padding: 0;\n}\ntextarea {\n  overflow: auto;\n}\noptgroup {\n  font-weight: bold;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\ntd,\nth {\n  padding: 0;\n}\nul,\nli {\n  margin: 0;\n  padding: 0;\n}\n.margin-0 {\n  margin: 0 !important;\n}\n.margin-xs {\n  margin: 2px;\n}\n.margin-s {\n  margin: 5px;\n}\n.margin-m {\n  margin: 10px;\n}\n.margin {\n  margin: 15px;\n}\n.margin-lg {\n  margin: 30px;\n}\n.margin-xl {\n  margin: 45px;\n}\n.margin-top-0 {\n  margin-top: 0 !important;\n}\n.margin-top-xs {\n  margin-top: 2px;\n}\n.margin-top-s {\n  margin-top: 5px;\n}\n.margin-top-m {\n  margin-top: 10px;\n}\n.margin-top {\n  margin-top: 15px;\n}\n.margin-top-lg {\n  margin-top: 30px;\n}\n.margin-top-xl {\n  margin-top: 45px;\n}\n.margin-right-0 {\n  margin-right: 0 !important;\n}\n.margin-right-xs {\n  margin-right: 2px;\n}\n.margin-right-s {\n  margin-right: 5px;\n}\n.margin-right-m {\n  margin-right: 10px;\n}\n.margin-right,\n#menu #navigation ul li {\n  margin-right: 15px;\n}\n.margin-right-lg {\n  margin-right: 30px;\n}\n.margin-right-xl {\n  margin-right: 45px;\n}\n.margin-bottom-0 {\n  margin-bottom: 0 !important;\n}\n.margin-bottom-xs {\n  margin-bottom: 2px;\n}\n.margin-bottom-s {\n  margin-bottom: 5px;\n}\n.margin-bottom-m {\n  margin-bottom: 10px;\n}\n.margin-bottom {\n  margin-bottom: 15px;\n}\n.margin-bottom-lg {\n  margin-bottom: 30px;\n}\n.margin-bottom-xl {\n  margin-bottom: 45px;\n}\n.margin-left-0 {\n  margin-left: 0 !important;\n}\n.margin-left-xs {\n  margin-left: 2px;\n}\n.margin-left-s {\n  margin-left: 5px;\n}\n.margin-left-m {\n  margin-left: 10px;\n}\n.margin-left {\n  margin-left: 15px;\n}\n.margin-left-lg {\n  margin-left: 30px;\n}\n.margin-left-xl {\n  margin-left: 45px;\n}\n.padding-xs {\n  padding: 2px;\n}\n.padding-s {\n  padding: 5px;\n}\n.padding-m {\n  padding: 10px;\n}\n.padding {\n  padding: 15px;\n}\n.padding-lg {\n  padding: 30px;\n}\n.padding-xl {\n  padding: 45px;\n}\n.padding-top-xs {\n  padding-top: 2px;\n}\n.padding-top-s {\n  padding-top: 5px;\n}\n.padding-top-m {\n  padding-top: 10px;\n}\n.padding-top {\n  padding-top: 15px;\n}\n.padding-top-lg {\n  padding-top: 30px;\n}\n.padding-top-xl {\n  padding-top: 45px;\n}\n.padding-right-xs {\n  padding-right: 2px;\n}\n.padding-right-s {\n  padding-right: 5px;\n}\n.padding-right-m {\n  padding-right: 10px;\n}\n.padding-right {\n  padding-right: 15px;\n}\n.padding-right-lg {\n  padding-right: 30px;\n}\n.padding-right-xl {\n  padding-right: 45px;\n}\n.padding-bottom-xs {\n  padding-bottom: 2px;\n}\n.padding-bottom-s {\n  padding-bottom: 5px;\n}\n.padding-bottom-m {\n  padding-bottom: 10px;\n}\n.padding-bottom {\n  padding-bottom: 15px;\n}\n.padding-bottom-lg {\n  padding-bottom: 30px;\n}\n.padding-bottom-xl {\n  padding-bottom: 45px;\n}\n.padding-left-xs {\n  padding-left: 2px;\n}\n.padding-left-s {\n  padding-left: 5px;\n}\n.padding-left-m {\n  padding-left: 10px;\n}\n.padding-left {\n  padding-left: 15px;\n}\n.padding-left-lg {\n  padding-left: 30px;\n}\n.padding-left-xl {\n  padding-left: 45px;\n}\n/*\n * .generate-color-schema(@colorName, @colorValue)\n *\n *   Generates a set of classes for a given color variable.\n *\n *   Usage:\n *\n *     @b0: #070A0D;\n *     .generate-color-schema(b0, @b0);\n *\n *   Results in the following classes:\n *\n *     .text-b0 { color: #070A0D; }\n *     .bg-b0 { background-color: #070A0D; }\n */\n.text-white {\n  color: white;\n}\n.text-black {\n  color: black;\n}\n.bg-white {\n  background: white;\n}\n.bg-black {\n  background: black;\n}\n.text-gr0 {\n  color: #202020;\n}\n.bg-gr0 {\n  background-color: #202020;\n}\n.text-gr1 {\n  color: #555A5F;\n}\n.bg-gr1 {\n  background-color: #555A5F;\n}\n.text-gr2 {\n  color: #8F8F91;\n}\n.bg-gr2 {\n  background-color: #8F8F91;\n}\n.text-gr3 {\n  color: #E5E2DE;\n}\n.bg-gr3 {\n  background-color: #E5E2DE;\n}\n.text-gr4 {\n  color: #FEFEFE;\n}\n.bg-gr4 {\n  background-color: #FEFEFE;\n}\n.text-r0 {\n  color: #7F1F2D;\n}\n.bg-r0 {\n  background-color: #7F1F2D;\n}\n.text-r1 {\n  color: #9F2738;\n}\n.bg-r1 {\n  background-color: #9F2738;\n}\n.text-b0 {\n  color: #4F6269;\n}\n.bg-b0 {\n  background-color: #4F6269;\n}\n.text-b1 {\n  color: #749099;\n}\n.bg-b1 {\n  background-color: #749099;\n}\n.raleway {\n  font-family: 'Raleway', sans-serif;\n  letter-spacing: .9px;\n}\n.open-sans,\nhtml,\nbody {\n  font-family: 'Open Sans', sans-serif;\n}\nh1,\n.h1 {\n  font-size: 3em;\n  font-weight: 300;\n}\nh2,\n.h2 {\n  font-size: 2.25em;\n  font-weight: 300;\n}\nh3,\n.h3 {\n  font-size: 1.75em;\n  font-weight: 300;\n}\nh4,\n.h4 {\n  font-size: 1.3125em;\n  font-weight: 300;\n}\nh5,\n.h5 {\n  font-size: 1.125em;\n  font-weight: 300;\n}\nh6,\n.h6 {\n  font-size: 1em;\n  font-weight: 300;\n}\nh1 {\n  margin-bottom: .5em;\n  line-height: 1em;\n}\nh2 {\n  margin-bottom: 0.6666666667em;\n  line-height: 1.33333333em;\n}\nh3 {\n  margin-bottom: 1em;\n  line-height: 1em;\n}\nh4 {\n  margin-bottom: 1.1428571429em;\n  line-height: 1.14285714em;\n}\nh5 {\n  margin-bottom: 1.3333333333em;\n  line-height: 2.66666667em;\n}\nh6 {\n  margin-bottom: 1.7142857143em;\n  line-height: 1.5em;\n}\nsmall,\n.small {\n  font-size: 0.85em;\n}\n.xsmall {\n  font-size: 0.75em;\n}\np {\n  font-size: 1em;\n  line-height: 1.5em;\n  margin-bottom: 1.5em;\n  font-weight: 400;\n}\np:last-child {\n  margin: 0;\n}\n.italic {\n  font-style: italic;\n}\n.uppercase {\n  text-transform: uppercase;\n}\n.text-center {\n  text-align: center;\n}\nstrong,\n.strong {\n  font-weight: 900;\n}\n.fw-100 {\n  font-weight: 100 !important;\n}\n.fw-300 {\n  font-weight: 300 !important;\n}\n.fw-400 {\n  font-weight: 400 !important;\n}\n.fw-600 {\n  font-weight: 600 !important;\n}\n.fw-700 {\n  font-weight: 700 !important;\n}\n.fw-900 {\n  font-weight: 900 !important;\n}\n.underline,\n.underline-s,\n.underline-m,\n.underline-lg {\n  height: 2px;\n  background: #202020;\n  margin: 0 auto;\n}\n.underline-s {\n  width: 60px;\n}\n.underline-m {\n  width: 90px;\n}\n.underline-lg {\n  width: 120px;\n}\na,\n.link {\n  color: #E5E2DE;\n  font-weight: 600;\n  text-decoration: none;\n  -webkit-transition: color 0.3s;\n  -moz-transition: color 0.3s;\n  transition: color 0.3s;\n}\na:hover,\n.link:hover {\n  color: white;\n  text-decoration: none;\n}\na:hover,\n.link:hover,\na:active,\n.link:active,\na:focus,\n.link:focus {\n  text-decoration: none;\n}\n.inline {\n  display: inline;\n}\n.inline-block {\n  display: inline-block;\n}\n.table {\n  display: table;\n}\n.fixed {\n  position: fixed !important;\n}\n.absolute {\n  position: absolute !important;\n}\n.relative {\n  position: relative !important;\n}\n.center-content {\n  display: flex;\n  justify-content: center;\n}\n.align-vertical {\n  display: table-cell;\n  vertical-align: middle;\n}\n.vertically-center {\n  position: relative;\n  transform: translateY(-50%);\n  top: 50%;\n}\n.flip-vertical {\n  transform: rotate(180deg);\n}\n.overflow-ellipses {\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n}\n.radius-xs {\n  border-radius: 2px;\n}\n.radius-s {\n  border-radius: 5px;\n}\n.radius {\n  border-radius: 15px;\n}\n.box-shadow {\n  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);\n}\n.box-shadow-light {\n  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n}\nhtml,\nbody {\n  width: 100%;\n  height: 100%;\n  color: #202020;\n  background-color: #FEFEFE;\n  font-size: 16px;\n  font-weight: 400;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);\n  cursor: default;\n}\ndiv {\n  display: flex;\n  align-items: center;\n  width: 100%;\n}\n#app-container {\n  display: flex;\n  margin: 0 auto;\n  width: 100%;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n}\nbutton {\n  padding: 15px 10px;\n  transition: all 500ms ease;\n  border-radius: 5px;\n  background-color: #202020;\n  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n}\nbutton:hover {\n  background-color: #282828;\n  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);\n}\nbutton:focus {\n  outline: none;\n}\n.section {\n  width: 55%;\n}\n@media (min-width: 320px) and (max-width: 620px) {\n  #menu {\n    display: flex;\n    justify-content: center;\n  }\n  #navigation,\n  #instruction-graphic {\n    display: none;\n  }\n  .section {\n    width: 100%;\n  }\n}\n", ""]);
+exports.push([module.i, "#menu {\n  height: 65px;\n}\n#menu #logo-container {\n  width: 185px;\n  height: inherit;\n}\n#menu #logo-container #logo {\n  height: 55px;\n}\n#menu #navigation {\n  position: absolute;\n  right: 0;\n}\n#menu #navigation ul {\n  list-style: none;\n  font-size: 14px;\n}\n#menu #navigation ul li {\n  display: inline;\n}\n#campaign {\n  height: 600px;\n  flex-direction: column;\n}\n#campaign.gradient {\n  background-image: radial-gradient(#555A5F, black);\n}\n#get-started #instructions {\n  display: flex;\n  max-width: 500px;\n  flex-direction: column;\n}\n#get-started #instructions .instruction-bullet {\n  flex-direction: column;\n  align-items: left;\n}\n#get-started #instructions .instruction-bullet .instruction-icon-container {\n  line-height: 30px;\n}\n#get-started #instructions .instruction-bullet .instruction-icon-container .instruction-icon {\n  height: 30px;\n}\n#get-started #instructions .instruction-bullet .instruction-list {\n  list-style: none;\n}\n#get-started #instructions .instruction-bullet .instruction-list li {\n  margin-left: 45px;\n}\n#get-started #instructions .instruction-bullet .instruction-list li.direction {\n  margin-top: 5px;\n  margin-bottom: 15px;\n}\n#get-started #instructions .instruction-bullet .instruction-list li.code-block {\n  width: 100%;\n  margin-bottom: 15px;\n  font-weight: 300 !important;\n  background-color: #E5E2DE;\n  padding: 15px;\n  border-radius: 5px;\n  border: 1px solid #202020;\n  font: 12px/14px Monospace, sans-serif;\n}\n#get-started #instruction-graphic {\n  max-width: 300px;\n}\n#features {\n  flex-direction: column;\n  align-items: left;\n}\n#team {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  width: 75%;\n}\n#team #members {\n  flex-direction: row;\n  justify-content: space-around;\n}\n#team #members .member {\n  flex-direction: column;\n}\n#team #members .member .img-container {\n  position: relative;\n  width: 250px;\n  height: 250px;\n  border-radius: 50%;\n  overflow: hidden;\n}\n#team #members .member .img-container .head-shot {\n  position: absolute;\n  height: 400px;\n}\n#team #members .member .member-info {\n  flex-direction: column;\n  align-items: center;\n}\n/*! normalize.css v3.0.1 | MIT License | git.io/normalize */\n* {\n  box-sizing: border-box;\n}\nhtml {\n  size-adjust: 100%;\n}\nbody {\n  margin: 0;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nnav,\nsection,\nsummary {\n  display: block;\n}\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  vertical-align: baseline;\n}\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n[hidden],\ntemplate {\n  display: none;\n}\na {\n  background: transparent;\n}\na:active,\na:hover {\n  outline: 0;\n  cursor: pointer;\n}\nabbr[title] {\n  border-bottom: 1px dotted;\n}\nabbr {\n  text-decoration: none;\n  border-bottom: 0;\n}\nb,\nstrong {\n  font-weight: bold;\n}\ndfn {\n  font-style: italic;\n}\nmark {\n  background: #ff0;\n  color: #000;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsup {\n  top: -0.5em;\n}\nsub {\n  bottom: -0.25em;\n}\nimg {\n  border: 0;\n}\nsvg:not(:root) {\n  overflow: hidden;\n}\nfigure {\n  margin: 1em 40px;\n}\nhr {\n  box-sizing: content-box;\n  height: 0;\n}\npre {\n  overflow: auto;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  font: inherit;\n  margin: 0;\n}\nbutton {\n  overflow: visible;\n}\nbutton:hover,\nbutton:focus {\n  cursor: pointer;\n}\nbutton,\nselect {\n  text-transform: none;\n}\nbutton,\nhtml input[type=\"button\"] {\n  appearance: button;\n  cursor: pointer;\n}\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\nbutton input::focus-inner {\n  border: 0;\n  padding: 0;\n}\ninput {\n  line-height: normal;\n}\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  appearance: button;\n  cursor: pointer;\n}\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0;\n}\ninput[type=\"number\"]::inner-spin-button,\ninput[type=\"number\"]::outer-spin-button {\n  height: auto;\n}\ninput[type=\"search\"] {\n  box-sizing: border-box;\n  -webkit-appearance: none;\n  appearance: none;\n}\ninput[type=\"search\"]::search-cancel-button,\ninput[type=\"search\"]::search-decoration {\n  -webkit-appearance: none;\n  appearance: none;\n}\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\nlegend {\n  border: 0;\n  padding: 0;\n}\ntextarea {\n  overflow: auto;\n}\noptgroup {\n  font-weight: bold;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\ntd,\nth {\n  padding: 0;\n}\nul,\nli {\n  margin: 0;\n  padding: 0;\n}\n.margin-0 {\n  margin: 0 !important;\n}\n.margin-xs {\n  margin: 2px;\n}\n.margin-s {\n  margin: 5px;\n}\n.margin-m {\n  margin: 10px;\n}\n.margin {\n  margin: 15px;\n}\n.margin-lg {\n  margin: 30px;\n}\n.margin-xl {\n  margin: 45px;\n}\n.margin-top-0 {\n  margin-top: 0 !important;\n}\n.margin-top-xs {\n  margin-top: 2px;\n}\n.margin-top-s {\n  margin-top: 5px;\n}\n.margin-top-m {\n  margin-top: 10px;\n}\n.margin-top {\n  margin-top: 15px;\n}\n.margin-top-lg {\n  margin-top: 30px;\n}\n.margin-top-xl {\n  margin-top: 45px;\n}\n.margin-right-0 {\n  margin-right: 0 !important;\n}\n.margin-right-xs {\n  margin-right: 2px;\n}\n.margin-right-s {\n  margin-right: 5px;\n}\n.margin-right-m {\n  margin-right: 10px;\n}\n.margin-right,\n#menu #navigation ul li {\n  margin-right: 15px;\n}\n.margin-right-lg {\n  margin-right: 30px;\n}\n.margin-right-xl {\n  margin-right: 45px;\n}\n.margin-bottom-0 {\n  margin-bottom: 0 !important;\n}\n.margin-bottom-xs {\n  margin-bottom: 2px;\n}\n.margin-bottom-s {\n  margin-bottom: 5px;\n}\n.margin-bottom-m {\n  margin-bottom: 10px;\n}\n.margin-bottom {\n  margin-bottom: 15px;\n}\n.margin-bottom-lg {\n  margin-bottom: 30px;\n}\n.margin-bottom-xl {\n  margin-bottom: 45px;\n}\n.margin-left-0 {\n  margin-left: 0 !important;\n}\n.margin-left-xs {\n  margin-left: 2px;\n}\n.margin-left-s {\n  margin-left: 5px;\n}\n.margin-left-m {\n  margin-left: 10px;\n}\n.margin-left {\n  margin-left: 15px;\n}\n.margin-left-lg {\n  margin-left: 30px;\n}\n.margin-left-xl {\n  margin-left: 45px;\n}\n.padding-xs {\n  padding: 2px;\n}\n.padding-s {\n  padding: 5px;\n}\n.padding-m {\n  padding: 10px;\n}\n.padding {\n  padding: 15px;\n}\n.padding-lg {\n  padding: 30px;\n}\n.padding-xl {\n  padding: 45px;\n}\n.padding-top-xs {\n  padding-top: 2px;\n}\n.padding-top-s {\n  padding-top: 5px;\n}\n.padding-top-m {\n  padding-top: 10px;\n}\n.padding-top {\n  padding-top: 15px;\n}\n.padding-top-lg {\n  padding-top: 30px;\n}\n.padding-top-xl {\n  padding-top: 45px;\n}\n.padding-right-xs {\n  padding-right: 2px;\n}\n.padding-right-s {\n  padding-right: 5px;\n}\n.padding-right-m {\n  padding-right: 10px;\n}\n.padding-right {\n  padding-right: 15px;\n}\n.padding-right-lg {\n  padding-right: 30px;\n}\n.padding-right-xl {\n  padding-right: 45px;\n}\n.padding-bottom-xs {\n  padding-bottom: 2px;\n}\n.padding-bottom-s {\n  padding-bottom: 5px;\n}\n.padding-bottom-m {\n  padding-bottom: 10px;\n}\n.padding-bottom {\n  padding-bottom: 15px;\n}\n.padding-bottom-lg {\n  padding-bottom: 30px;\n}\n.padding-bottom-xl {\n  padding-bottom: 45px;\n}\n.padding-left-xs {\n  padding-left: 2px;\n}\n.padding-left-s {\n  padding-left: 5px;\n}\n.padding-left-m {\n  padding-left: 10px;\n}\n.padding-left {\n  padding-left: 15px;\n}\n.padding-left-lg {\n  padding-left: 30px;\n}\n.padding-left-xl {\n  padding-left: 45px;\n}\n/*\n * .generate-color-schema(@colorName, @colorValue)\n *\n *   Generates a set of classes for a given color variable.\n *\n *   Usage:\n *\n *     @b0: #070A0D;\n *     .generate-color-schema(b0, @b0);\n *\n *   Results in the following classes:\n *\n *     .text-b0 { color: #070A0D; }\n *     .bg-b0 { background-color: #070A0D; }\n */\n.text-white {\n  color: white;\n}\n.text-black {\n  color: black;\n}\n.bg-white {\n  background: white;\n}\n.bg-black {\n  background: black;\n}\n.text-gr0 {\n  color: #202020;\n}\n.bg-gr0 {\n  background-color: #202020;\n}\n.text-gr1 {\n  color: #555A5F;\n}\n.bg-gr1 {\n  background-color: #555A5F;\n}\n.text-gr2 {\n  color: #8F8F91;\n}\n.bg-gr2 {\n  background-color: #8F8F91;\n}\n.text-gr3 {\n  color: #E5E2DE;\n}\n.bg-gr3 {\n  background-color: #E5E2DE;\n}\n.text-gr4 {\n  color: #FEFEFE;\n}\n.bg-gr4 {\n  background-color: #FEFEFE;\n}\n.text-r0 {\n  color: #7F1F2D;\n}\n.bg-r0 {\n  background-color: #7F1F2D;\n}\n.text-r1 {\n  color: #9F2738;\n}\n.bg-r1 {\n  background-color: #9F2738;\n}\n.text-b0 {\n  color: #4F6269;\n}\n.bg-b0 {\n  background-color: #4F6269;\n}\n.text-b1 {\n  color: #749099;\n}\n.bg-b1 {\n  background-color: #749099;\n}\n.raleway {\n  font-family: 'Raleway', sans-serif;\n  letter-spacing: .9px;\n}\n.open-sans,\nhtml,\nbody {\n  font-family: 'Open Sans', sans-serif;\n}\nh1,\n.h1 {\n  font-size: 3em;\n  font-weight: 300;\n}\nh2,\n.h2 {\n  font-size: 2.25em;\n  font-weight: 300;\n}\nh3,\n.h3 {\n  font-size: 1.75em;\n  font-weight: 300;\n}\nh4,\n.h4 {\n  font-size: 1.3125em;\n  font-weight: 300;\n}\nh5,\n.h5 {\n  font-size: 1.125em;\n  font-weight: 300;\n}\nh6,\n.h6 {\n  font-size: 1em;\n  font-weight: 300;\n}\nh1 {\n  margin-bottom: .5em;\n  line-height: 1em;\n}\nh2 {\n  margin-bottom: 0.6666666667em;\n  line-height: 1.33333333em;\n}\nh3 {\n  margin-bottom: 1em;\n  line-height: 1em;\n}\nh4 {\n  margin-bottom: 1.1428571429em;\n  line-height: 1.14285714em;\n}\nh5 {\n  margin-bottom: 1.3333333333em;\n  line-height: 2.66666667em;\n}\nh6 {\n  margin-bottom: 1.7142857143em;\n  line-height: 1.5em;\n}\nsmall,\n.small {\n  font-size: 0.85em;\n}\n.xsmall {\n  font-size: 0.75em;\n}\np {\n  font-size: 1em;\n  line-height: 1.5em;\n  margin-bottom: 1.5em;\n  font-weight: 400;\n}\np:last-child {\n  margin: 0;\n}\n.italic {\n  font-style: italic;\n}\n.uppercase {\n  text-transform: uppercase;\n}\n.text-center {\n  text-align: center;\n}\nstrong,\n.strong {\n  font-weight: 900;\n}\n.fw-100 {\n  font-weight: 100 !important;\n}\n.fw-300 {\n  font-weight: 300 !important;\n}\n.fw-400 {\n  font-weight: 400 !important;\n}\n.fw-600 {\n  font-weight: 600 !important;\n}\n.fw-700 {\n  font-weight: 700 !important;\n}\n.fw-900 {\n  font-weight: 900 !important;\n}\n.underline,\n.underline-s,\n.underline-m,\n.underline-lg {\n  height: 2px;\n  background: #202020;\n  margin: 0 auto;\n}\n.underline-s {\n  width: 60px;\n}\n.underline-m {\n  width: 90px;\n}\n.underline-lg {\n  width: 120px;\n}\na,\n.link {\n  color: #E5E2DE;\n  font-weight: 600;\n  text-decoration: none;\n  -webkit-transition: color 0.3s;\n  -moz-transition: color 0.3s;\n  transition: color 0.3s;\n}\na:hover,\n.link:hover {\n  color: white;\n  text-decoration: none;\n}\na:hover,\n.link:hover,\na:active,\n.link:active,\na:focus,\n.link:focus {\n  text-decoration: none;\n}\n.inline {\n  display: inline;\n}\n.inline-block {\n  display: inline-block;\n}\n.table {\n  display: table;\n}\n.block {\n  display: block;\n}\n.fixed {\n  position: fixed !important;\n}\n.absolute {\n  position: absolute !important;\n}\n.relative {\n  position: relative !important;\n}\n.center-content {\n  display: flex;\n  justify-content: center;\n}\n.align-vertical {\n  display: table-cell;\n  vertical-align: middle;\n}\n.vertically-center {\n  position: relative;\n  transform: translateY(-50%);\n  top: 50%;\n}\n.flip-vertical {\n  transform: rotate(180deg);\n}\n.overflow-ellipses {\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n}\n.radius-xs {\n  border-radius: 2px;\n}\n.radius-s {\n  border-radius: 5px;\n}\n.radius {\n  border-radius: 15px;\n}\n.box-shadow {\n  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);\n}\n.box-shadow-light {\n  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n}\nhtml,\nbody {\n  width: 100%;\n  height: 100%;\n  color: #202020;\n  background-color: #FEFEFE;\n  font-size: 16px;\n  font-weight: 400;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);\n  cursor: default;\n}\ndiv {\n  display: flex;\n  align-items: center;\n  width: 100%;\n}\n#app-container {\n  display: flex;\n  margin: 0 auto;\n  width: 100%;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n}\nbutton {\n  padding: 15px 10px;\n  transition: all 500ms ease;\n  border-radius: 5px;\n  background-color: #202020;\n  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n}\nbutton:hover {\n  background-color: #282828;\n  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);\n}\nbutton:focus {\n  outline: none;\n}\n.section {\n  width: 55%;\n}\n@media (min-width: 320px) and (max-width: 620px) {\n  #menu {\n    display: flex;\n    justify-content: center;\n  }\n  #navigation,\n  #instruction-graphic {\n    display: none;\n  }\n  .section {\n    width: 100%;\n  }\n}\n", ""]);
 
 // exports
 
@@ -19518,6 +19510,30 @@ var Instruction = function (_Component) {
 }(_react.Component);
 
 exports.default = Instruction;
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "52d3f209fe5acd28dd516c54cff293cf.jpg";
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "b4501718f097179e510e8c86687a2fa3.jpg";
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "bc54a2ded4bacd0444d3a03dd6799afc.jpg";
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "3df8c8c3adc2cf0bcacc458b0b1303ed.jpg";
 
 /***/ })
 /******/ ]);
