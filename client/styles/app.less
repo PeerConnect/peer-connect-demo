@@ -59,10 +59,6 @@ button {
   .instruction-graphic-container { 
     display: none; 
   }
-
-  // .instruction-list {
-  //   width: 100%;
-  // }
 }
 
 /* 
@@ -70,7 +66,7 @@ button {
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .section {
+  .section, #team {
     width: 100%;
   }
 }
@@ -80,12 +76,16 @@ button {
   ##Screen = B/w 481px to 768px
 */
 @media (min-width: 481px) and (max-width: 768px) {
-  .section {
+  .section, #team {
     width: 100%;
   }
 
-  .instruction-graphic-container { 
+  .instruction-graphic-container, #menu #navigation ul li.hide-nav-link { 
     display: none; 
+  }
+
+  #team #members {
+    flex-direction: column;
   }
 }
 
@@ -99,7 +99,7 @@ button {
     justify-content: center;
   }
 
-  .section {
+  .section, #team {
     width: 100%;
   }
   
@@ -107,4 +107,7 @@ button {
     display: none; 
   }
 
+  #team #members {
+    flex-direction: column;
+  }
 }

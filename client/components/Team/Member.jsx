@@ -24,7 +24,7 @@ class Member extends Component {
 
   render() {
     return (
-      <div className="member">
+      <div className="member margin-m">
         <div className="img-container margin-bottom">
           <img className="head-shot" style={this.props.imgStyle} src={this.props.imgSrc} />
         </div>
