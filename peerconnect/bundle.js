@@ -17780,7 +17780,7 @@ socket.on('create_receiver_peer', (initiatorData, assetTypes, foldLoading, image
   //if foldLoading is off || if foldLoading is on and image is not in view
   //send indeces of imageArray to request from initiator peer
   for (let i = 0; i < imageArray.length; i += 1) {
-    if (!isElementInViewport(imageArray[i]) && configuration.foldLoading || !configuration.foldLoading) {
+    if ((!isElementInViewport(imageArray[i]) && configuration.foldLoading) || !configuration.foldLoading) {
       imageSliceIndex = i;
       break;
     }
