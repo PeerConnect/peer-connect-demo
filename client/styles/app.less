@@ -6,7 +6,7 @@ html, body {
 	height: 100%;
 	&:extend(.open-sans);
 	color: @gr0;
-	background-color: @gr3;
+	background-color: @gr4;
 	font-size: @basefontsize;
 	font-weight: @basefontweight;
 	text-rendering: optimizeLegibility;
@@ -44,5 +44,24 @@ button {
 
   &:focus {
     outline: none;
+  }
+}
+
+.section {
+  width: 55%;
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  #menu { 
+    display: flex;
+    justify-content: center;
+  }
+  
+  #navigation, #instruction-graphic { 
+    display: none; 
+  }
+
+  .section {
+    width: 100%;
   }
 }
