@@ -1,47 +1,51 @@
 import React from 'react';
 import { render } from 'react-dom';
-import doge from '../../images/doge.jpg'
-import raccoon from '../../images/raccoon.jpg'
-import kitten from '../../images/kitten.jpg'
-import honeyBadger from '../../images/honey_badger.jpg'
+import mike from '../../images/mike.jpg'
+import justin from '../../images/justin.jpg'
+import jim from '../../images/jim.jpg'
+import peter from '../../images/peter.jpg'
 
 const Team = () =>
   (
     <div id="team">
       <a name="team"></a>
-      <h2>Meet the Members!</h2>
+      <h2 className="fw-600 margin-top margin-bottom-m raleway text-center">Meet the Team</h2>
       <div id="members">
         <div className="member">
-          <h4>Mike Gutierrez</h4>
-          <h6>Software Engineer</h6>
-          <img className="head-shot" data-src={honeyBadger} />
-          <p className="member-info">
-            *Place description here*
-          </p>
+          <div className="img-container margin-bottom">
+            <img className="head-shot" style={{ top: '-20px' }} src={mike} />
+          </div>
+          <div className="member-info">
+            <h4 className="margin-0 fw-600">Mike Gutierrez</h4>
+            <h6 className="margin-0">Software Engineer</h6>
+          </div>
         </div>
         <div className="member">
-          <h4>Jim Kang</h4>
-          <h6>Software Engineer</h6>
-          <img className="head-shot" data-src={doge} />
-          <p className="member-info">
-            *Place description here*
-          </p>
+          <div className="img-container margin-bottom">
+            <img className="head-shot" style={{ top: '-20px' }} src={jim} />
+          </div>
+          <div className="member-info">
+            <h4 className="margin-0 fw-600">Jim Kang</h4>
+            <h6 className="margin-0">Software Engineer</h6>
+          </div>
         </div>
         <div className="member">
-          <h4>Justin Ko</h4>
-          <h6>Software Engineer</h6>
-          <img className="head-shot" data-src={kitten} />
-          <p className="member-info">
-            *Place description here*
-          </p>
+          <div className="img-container margin-bottom">
+            <img className="head-shot" style={{ top: '-50px' }} src={justin} />
+          </div>
+          <div className="member-info">
+            <h4 className="margin-0 fw-600">Justin Ko</h4>
+            <h6 className="margin-0">Software Engineer</h6>
+          </div>
         </div>
         <div className="member">
-          <h4>Peter Lee</h4>
-          <h6>Software Engineer</h6>
-          <img className="head-shot" data-src={raccoon} />
-          <p className="member-info">
-            *Place description here*
-          </p>
+          <div className="img-container margin-bottom">
+            <img className="head-shot" style={{ top: '-50px' }} src={peter} />
+          </div>
+          <div className="member-info">
+            <h4 className="margin-0 fw-600">Peter Lee</h4>
+            <h6 className="margin-0">Software Engineer</h6>
+          </div>
         </div>
       </div>
     </div>

@@ -27,6 +27,7 @@
     "file-loader": "^1.1.6",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
+    "moment": "^2.20.1",
     "nodemon": "^1.14.11",
     "path": "^0.12.7",
     "peer-connect": "^0.1.3",
