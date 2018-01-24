@@ -13,7 +13,7 @@ const Team = () =>
       <div id="members">
         <div className="member">
           <div className="img-container margin-bottom">
-            <img className="head-shot" style={{ top: '-20px' }} src={mike} />
+            <img className="head-shot" style={{ top: '-20px' }} data-src={mike} />
           </div>
           <div className="member-info">
             <h4 className="margin-0 fw-600">Mike Gutierrez</h4>
@@ -22,7 +22,7 @@ const Team = () =>
         </div>
         <div className="member">
           <div className="img-container margin-bottom">
-            <img className="head-shot" style={{ top: '-20px' }} src={jim} />
+            <img className="head-shot" style={{ top: '-20px' }} data-src={jim} />
           </div>
           <div className="member-info">
             <h4 className="margin-0 fw-600">Jim Kang</h4>
@@ -31,7 +31,7 @@ const Team = () =>
         </div>
         <div className="member">
           <div className="img-container margin-bottom">
-            <img className="head-shot" style={{ top: '-50px' }} src={justin} />
+            <img className="head-shot" style={{ top: '-50px' }} data-src={justin} />
           </div>
           <div className="member-info">
             <h4 className="margin-0 fw-600">Justin Ko</h4>
@@ -40,7 +40,7 @@ const Team = () =>
         </div>
         <div className="member">
           <div className="img-container margin-bottom">
-            <img className="head-shot" style={{ top: '-50px' }} src={peter} />
+            <img className="head-shot" style={{ top: '-50px' }} data-src={peter} />
           </div>
           <div className="member-info">
             <h4 className="margin-0 fw-600">Peter Lee</h4>
