@@ -31,10 +31,6 @@ const instructions = [
 ];
 
 class GetStarted extends Component {
-  constructor() {
-    super();
-  }
-
   renderInstructions() {
     return instructions.map((instruction, i) => {
       return (
