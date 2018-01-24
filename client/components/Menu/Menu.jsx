@@ -10,7 +10,7 @@ const Menu = () =>
     <div id="menu" className="bg-gr0 padding-left-xl padding-right-xl box-shadow-light">
       <div id="logo-container">
         <img id="logo" src={logo} />
-        <h4 className="raleway text-gr2">PeerConnect</h4>
+        <h4 className="raleway text-gr3">PeerConnect</h4>
       </div>
       <Navigation />
     </div>

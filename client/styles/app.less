@@ -6,7 +6,7 @@ html, body {
 	height: 100%;
 	&:extend(.open-sans);
 	color: @gr0;
-	background-color: @gr2;
+	background-color: @gr3;
 	font-size: @basefontsize;
 	font-weight: @basefontweight;
 	text-rendering: optimizeLegibility;
@@ -28,4 +28,21 @@ div {
 	justify-content: center;
 	flex-direction: column;
   align-items: center;
+}
+
+button {
+  padding: 15px 10px;
+  transition: @trans-all500;
+  .radius-s;
+  .bg-gr0;
+  .box-shadow-light;
+
+  &:hover {
+    background-color: lighten(@gr0, 3%);
+    .box-shadow;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
