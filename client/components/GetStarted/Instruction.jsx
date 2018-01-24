@@ -4,9 +4,6 @@ import { render } from 'react-dom';
 import check from '../../images/check.png'
 
 class Instruction extends Component {
-  constructor() {
-    super();
-  }
   render() {
     return (
       <div className="instruction-bullet">

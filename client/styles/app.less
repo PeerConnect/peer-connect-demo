@@ -51,17 +51,63 @@ button {
   width: 55%;
 }
 
-@media (min-width: 320px) and (max-width: 620px) {
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .instruction-graphic-container { 
+    display: none; 
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section, #team {
+    width: 100%;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 768px
+*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .section, #team {
+    width: 100%;
+  }
+
+  .instruction-graphic-container, #menu #navigation ul li.hide-nav-link { 
+    display: none; 
+  }
+
+  #team #members {
+    flex-direction: column;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 481px
+*/
+@media (min-width: 320px) and (max-width: 481px) {
   #menu { 
     display: flex;
     justify-content: center;
   }
+
+  .section, #team {
+    width: 100%;
+  }
   
-  #navigation, #instruction-graphic { 
+  #navigation, .instruction-graphic-container { 
     display: none; 
   }
 
-  .section {
-    width: 100%;
+  #team #members {
+    flex-direction: column;
   }
 }

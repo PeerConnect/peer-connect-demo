@@ -31,10 +31,6 @@ const instructions = [
 ];
 
 class GetStarted extends Component {
-  constructor() {
-    super();
-  }
-
   renderInstructions() {
     return instructions.map((instruction, i) => {
       return (
@@ -58,8 +54,8 @@ class GetStarted extends Component {
           <div className="h2 fw-600 margin-top margin-bottom-m raleway">Get Started</div>
           {this.renderInstructions()}
         </div>
-        <div className="center-content">
-          <img id="instruction-graphic" src={graphic} />
+        <div className="center-content instruction-graphic-container">
+          <img id="instruction-graphic" className="margin-left-xl" src={graphic} />
         </div>
       </div>
     );
