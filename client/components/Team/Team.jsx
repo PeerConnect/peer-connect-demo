@@ -8,6 +8,7 @@ import honeyBadger from '../../images/honey_badger.jpg'
 const Team = () =>
   (
     <div id="team">
+      <a name="team"></a>
       <h2>Meet the Members!</h2>
       <div id="members">
         <div className="member">

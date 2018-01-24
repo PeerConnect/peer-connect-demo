@@ -4,14 +4,15 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	&:extend(.lato);
-	color: @gr1;
+	&:extend(.open-sans);
+	color: @gr0;
 	background-color: @gr4;
 	font-size: @basefontsize;
 	font-weight: @basefontweight;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-	text-shadow: 1px 1px 1px rgba(0,0,0, 0.004);
+  text-shadow: 1px 1px 1px rgba(0,0,0, 0.004);
+  cursor: default;
 }
 
 div {
@@ -24,8 +25,43 @@ div {
 	display: flex;
 	margin: 0 auto;
 	width: 100%;
-	background-color: pink;
 	justify-content: center;
 	flex-direction: column;
-	align-items: center;
+  align-items: center;
+}
+
+button {
+  padding: 15px 10px;
+  transition: @trans-all500;
+  .radius-s;
+  .bg-gr0;
+  .box-shadow-light;
+
+  &:hover {
+    background-color: lighten(@gr0, 3%);
+    .box-shadow;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.section {
+  width: 55%;
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  #menu { 
+    display: flex;
+    justify-content: center;
+  }
+  
+  #navigation, #instruction-graphic { 
+    display: none; 
+  }
+
+  .section {
+    width: 100%;
+  }
 }

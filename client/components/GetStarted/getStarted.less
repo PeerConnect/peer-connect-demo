@@ -1,0 +1,50 @@
+#get-started {
+  #instructions {
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+
+    .instruction-bullet {
+      flex-direction: column;
+      align-items: left;
+      
+      .instruction-icon-container {
+        line-height:  30px;
+
+        .instruction-icon {
+          height: 30px;
+        }
+      }
+
+      .instruction-list {
+        list-style: none;
+
+        li {
+          .margin-left-xl;
+
+          &.direction {
+            .margin-top-s;
+            .margin-bottom;
+          }
+
+          &.code-block {
+            width: 100%;
+            .margin-bottom;
+            .fw-300;
+            .bg-gr3;
+            .padding;
+            .radius-s;
+            border: 1px solid @gr0;
+            font: 12px/14px Monospace, sans-serif;
+          }
+        }
+      }
+
+    }
+  }
+  
+  #instruction-graphic {
+    max-width: 300px;
+  }
+}
+
