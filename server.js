@@ -36,13 +36,13 @@ const peerConfig = {
   // asset file formats to exclude from peers
   excludeFormats: ['gif'],
   // load images above the fold from server if foldLoading: true
-  foldLoading: false,
+  foldLoading: true,
   // toggle geolocation for pairing peers
   geolocate: true,
   // route for video assets
-  videoRoute: './assets/videos',
+  videoRoute: './client/videos',
   //where you want to create torrent files
-  torrentRoute: './assets',
+  torrentRoute: './client',
   //domain name
   domainName: 'https://webseed.btorrent.xyz',
 };

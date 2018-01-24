@@ -60,8 +60,9 @@ let imageArray = Object.values(document.getElementsByTagName('img'));
 imageArray = imageArray.filter(node => node.hasAttribute('data-src'));
 let imageHeights;
 let imageSliceIndex;
+console.log(imageArray)
 // assign ids to image
-imageArray.forEach((image, index) => image.setAttribute('id', index));
+// imageArray.forEach((image, index) => image.setAttribute('id', index));
 
 //get video tag nodes
 let videoArray = Object.values(document.getElementsByTagName('video'));
@@ -126,7 +127,7 @@ socket.on('create_receiver_peer', (initiatorData, assetTypes, foldLoading, image
   //if foldLoading is off || if foldLoading is on and image is not in view
   //send indeces of imageArray to request from initiator peer
   for (let i = 0; i < imageArray.length; i += 1) {
-    if (!isElementInViewport(imageArray[i]) && configuration.foldLoading || !configuration.foldLoading) {
+    if ((!isElementInViewport(imageArray[i]) && configuration.foldLoading) || !configuration.foldLoading) {
       imageSliceIndex = i;
       break;
     }
@@ -307,10 +308,12 @@ function loopImage() {
 function setImage(imageData, imageArray, index) {
   console.log('Received all data for an image. Setting image.');
   counter += 1;
-  if (!isElementInViewport(imageArray[index]) && configuration.foldLoading || !configuration.foldLoading) {
+  if ((!isElementInViewport(imageArray[index]) && configuration.foldLoading) || !configuration.foldLoading) {
+    console.log("ELEMENT VIEWPORT THING")
     if (imageData.slice(0, 9) === 'undefined') imageArray[index].src = imageData.slice(9);
     else imageArray[index].src = imageData;
   }
+  console.log(!isElementInViewport(imageArray[index]))
 }
 
 // preset images with sent heights
