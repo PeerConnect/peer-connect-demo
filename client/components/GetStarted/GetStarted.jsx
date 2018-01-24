@@ -6,11 +6,12 @@ import { render } from 'react-dom';
 const GetStarted = () =>
   (
     <div id="get-started">
+      <a name="get-started"></a>
       <div id="instructions">
         <h2>Get Started</h2>
         <div className="instruction-bullet">
           <div className="instruction-bullet-header">
-            <img className="instruction-icon" src="https://image.flaticon.com/icons/png/128/291/291201.png"/>
+            <img className="instruction-icon" src="https://image.flaticon.com/icons/png/128/291/291201.png" />
             <h6>Add this script to your front end.</h6>
           </div>
           <div className="instruction-bullet-content">
@@ -22,7 +23,7 @@ const GetStarted = () =>
         </div>
         <div className="instruction-bullet">
           <div className="instruction-bullet-header">
-            <img className="instruction-icon" src="https://image.flaticon.com/icons/png/128/291/291201.png"/>
+            <img className="instruction-icon" src="https://image.flaticon.com/icons/png/128/291/291201.png" />
             <h6>Change source tags of which assets you want </h6>
           </div>
           <div className="instruction-bullet-content">

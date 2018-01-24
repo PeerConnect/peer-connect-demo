@@ -1,0 +1,40 @@
+#menu {
+  height: 55px;
+  
+  #logo-container {
+    width: 185px;
+    height: inherit;
+
+    #logo {
+      height: 45px;
+    }
+  }
+
+  #navigation {
+    position: absolute;
+    right: 0;
+
+    ul {
+      list-style: none;
+      font-size: 14px;
+      li {
+        display: inline;
+        &:extend(.margin-right);
+      }
+    }
+
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  #menu { 
+    display: flex;
+    justify-content: center;
+  }
+  
+  #navigation { 
+    display: none; 
+  }
+}
+

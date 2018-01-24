@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Title from './Title/Title.jsx'
+import Menu from './Menu/Menu.jsx'
 import GetStarted from './GetStarted/GetStarted.jsx'
 import Features from './Features/Features.jsx'
 import Team from './Team/Team.jsx'
@@ -9,7 +9,7 @@ import Team from './Team/Team.jsx'
 const App = () =>
   (
     <div id="app-container">
-      <Title />
+      <Menu />
       <Features />
       <GetStarted />
       <Team />

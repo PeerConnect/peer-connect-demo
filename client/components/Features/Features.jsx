@@ -6,18 +6,19 @@ import { render } from 'react-dom';
 const Features = () =>
   (
     <div id="features">
+      <a name="features"></a>
       <h2>Features</h2>
-        <h5>config 1</h5>
-        <li>
-          do this test
+      <h5>config 1</h5>
+      <li>
+        do this test
         </li>
-        <h5>config 2</h5>
-        <li>
-          do this here
+      <h5>config 2</h5>
+      <li>
+        do this here
         </li>
-        <h5>config 3</h5>
-        <li>
-          do this again
+      <h5>config 3</h5>
+      <li>
+        do this again
         </li>
     </div>
   );
