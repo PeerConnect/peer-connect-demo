@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "./node_modules/.bin/webpack -w",
-    "start": "nodemon server.js"
+    "webpack": "webpack --config webpack.config.js",
+    "start": "nodemon server.js",
+    "build": "webpack -p --config webpack.config.js"
   },
   "repository": {
     "type": "git",
