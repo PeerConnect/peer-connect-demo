@@ -10,7 +10,30 @@ class Campaign extends Component {
     this.state = {
       seeds: 0
     };
-    // this.renderDemoContent = this.renderDemoContent.bind(this);
+    this.renderDemoContent = this.renderDemoContent.bind(this);
+  }
+
+  componentDidMount() {
+    const client = new WebTorrent();
+    const torrentId = 'magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fsintel.torrent';
+    let seedCount;
+
+    function onTorrent(torrent) {
+      let that = this;
+      const file = torrent.files.find(function (file) {
+        return file.name.endsWith('.mp4');
+      })
+
+      file.appendTo('#video-tag');
+
+      function updateSeeds() {
+        seedCount = torrent.wires.length;
+        console.log(seedCount);
+        that.setState({ seeds: torrent.wires.length });
+      }
+      setInterval(updateSeeds, 1000);
+    }
+    client.add(torrentId, onTorrent.bind(this));
   }
 
   renderHomeContent() {
@@ -29,27 +52,9 @@ class Campaign extends Component {
   }
 
   renderDemoContent() {
-    const client = new WebTorrent();
-    const torrentId = 'magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fsintel.torrent';
-    // let seedCount;
-
-    client.add(torrentId, function (torrent) {
-      const file = torrent.files.find(function (file) {
-        return file.name.endsWith('.mp4');
-      })
-
-      file.appendTo('#video-tag');
-
-      function updateSeeds() {
-        console.log(torrent.wires.length);
-        // seedCount = torrent.wires.length;
-        // this.setState({ seeds: torrent.wires.length });
-      }
-
-      setInterval(updateSeeds, 1000);
-
-    });
-
+    // onTorrent.bind(this);
+    // this.setState({ seeds: 1 });
+    // this.setState({seeds:50});
     return (
       <div id="campaign" className="center-content gradient">
         <div className="demo-content-container section">
