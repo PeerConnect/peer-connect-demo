@@ -5,17 +5,17 @@ import { render } from 'react-dom';
 import Member from './Member.jsx';
 
 // Profile Images
-import profileMike from '../../images/mike.jpg'
-import profileJustin from '../../images/justin.jpg'
-import profileJim from '../../images/jim.jpg'
-import profilePeter from '../../images/peter.jpg'
+import profileMike from '../../assets/images/mike.jpeg'
+import profileJustin from '../../assets/images/justin.png'
+import profileJim from '../../assets/images/jim.jpg'
+import profilePeter from '../../assets/images/peter.jpg'
 
 const members = [
   {
     name: 'Mike Gutierrez',
     title: 'Software Engineer',
     imgSrc: profileMike,
-    imgStyle: { top: '-20px' },
+    imgStyle: { top: '-30px', left: '-40px' },
     githubURL: 'https://github.com/mikegutierrez',
     linkedInURL: 'https://www.linkedin.com/in/mikegutierrez/'
   },
@@ -31,7 +31,7 @@ const members = [
     name: 'Justin Ko',
     title: 'Software Engineer',
     imgSrc: profileJustin,
-    imgStyle: { top: '-50px' },
+    imgStyle: { top: '0', left: '-35px' },
     githubURL: 'https://github.com/justinko43',
     linkedInURL: 'https://www.linkedin.com/in/justin-ko-9b255893/'
   },
@@ -65,7 +65,7 @@ class Team extends Component {
 
   render() {
     return (
-      <div id="team">
+      <div id="team" className="margin-bottom-lg">
         <a name="team"></a>
         <h2 className="fw-600 margin-top margin-bottom-m raleway text-center">Meet the Team</h2>
         <div id="members">

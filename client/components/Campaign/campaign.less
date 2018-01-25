@@ -8,5 +8,26 @@
       #555A5F,
       black
     );
-}
+  }
+
+  .demo-content-container {
+    flex-direction: row;
+
+    .peer-info, .video-container {
+      width: 50%;
+    }
+  }
+
+  .peer-info {
+    flex-direction: column;
+    color: white;
+  }
+
+  .video-container {
+    height: 250px;
+
+    video {
+      width: 100%;
+    }
+  }
 }

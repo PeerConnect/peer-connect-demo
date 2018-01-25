@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 import Instruction from './Instruction.jsx';
 
 // Assets
-import graphic from '../../images/pc-graphic.png'
+import graphic from '../../assets/images/pc-graphic.png'
 
 const instructions = [
   {

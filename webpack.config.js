@@ -1,11 +1,15 @@
-const path = require('path');
+// const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './client/index.jsx',
+  entry: {
+    app: './client/index.jsx',
+    html: './index.html'
+  },
   output: {
-    path: path.resolve(__dirname, 'build'),
-    publicPath: '/build/',
-    filename: 'bundle.js'
+    path: __dirname + '/build',
+    publicPath: 'build/',
+    filename: '[name].js'
   },
   module: {
     rules: [
@@ -25,13 +29,24 @@ module.exports = {
         }],
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|jpeg|gif)$/,
         use: [
           {
             loader: 'file-loader'
           }
         ]
+      },
+      {
+        exclude: /node_modules/,
+        test: /\.html$/,
+        loader: 'html-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: __dirname + '/index.html'
+    })
+  ]
 }
