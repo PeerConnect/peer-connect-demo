@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 
 import Navigation from './Navigation.jsx';
 
-import logo from '../../images/pc-logo.png';
+import logo from '../../assets/images/pc-logo.png';
 
 const Menu = () =>
   (
@@ -15,7 +15,7 @@ const Menu = () =>
           <h4 className="raleway text-gr3 margin-left-m">PeerConnect</h4>
         </div>
       </Link>
-      <Navigation />
+      <Navigation location={window.location.pathname} />
     </div>
   );
 

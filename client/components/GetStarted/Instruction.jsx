@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-import check from '../../images/check.png'
+import check from '../../assets/images/check.png'
 
 class Instruction extends Component {
   render() {

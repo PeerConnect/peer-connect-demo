@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 
 // Assets
-import linkedIn from '../../images/linkedIn.png'
-import gitHub from '../../images/gitHub.png'
+import linkedIn from '../../assets/images/linkedIn.png'
+import gitHub from '../../assets/images/gitHub.png'
 
 class Member extends Component {
   renderLinkedIn() {
@@ -26,7 +26,7 @@ class Member extends Component {
     return (
       <div className="member margin-m">
         <div className="img-container margin-bottom">
-          <img className="head-shot" style={this.props.imgStyle} data-src={this.props.imgSrc} />
+          <img className="head-shot" style={this.props.imgStyle} src={this.props.imgSrc} />
         </div>
         <div className="member-info">
           <h4 className="margin-0 fw-600">{this.props.name}</h4>
