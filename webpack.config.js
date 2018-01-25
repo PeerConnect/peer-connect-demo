@@ -2,10 +2,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: {
-    app: './client/index.jsx',
-    html: './index.html'
-  },
+  entry: './client/index.jsx',
   output: {
     path: __dirname + '/build',
     publicPath: 'build/',

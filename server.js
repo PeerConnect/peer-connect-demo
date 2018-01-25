@@ -11,7 +11,7 @@ const server = app.listen(PORT, () =>
 );
 
 // favicon
-app.use(favicon(path.join(__dirname, '/build/assets/images', 'favicon.ico')));
+// app.use(favicon(path.join(__dirname, '/build/assets/images', 'favicon.ico')));
 
 // Serve static files
 app.use('/build', express.static(path.join(__dirname, '/build/')));
