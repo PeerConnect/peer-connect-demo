@@ -22,9 +22,16 @@ class Campaign extends Component {
   renderDemoContent() {
     return (
       <div id="campaign" className="center-content gradient">
-        {/* <video src="../assets/torrents/sintel.torrent" controls /> */}
-        <div style={{ width: '500px', height: '250px', backgroundColor: '#EFEFEF', justifyContent: 'center' }}>
-          <h2>VIDEO GOES HERE</h2>
+        <div className="demo-content-container section">
+          <div className="peer-info margin-left margin-right">
+            <div className="h3 fw-600 raleway margin-bottom">PEER INFO GOES HERE</div>
+            <div>Fact 1: it's fast</div>
+            <div>Fact 2: it's free</div>
+            <div>Fact 3: if you don't like it, it's open source</div>
+          </div>
+          <div className="video-container margin-left margin-right">
+            <video src="../assets/torrents/sintel.torrent" controls />
+          </div>
         </div>
       </div>
     )
