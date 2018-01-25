@@ -1,6 +1,7 @@
-const express = require("express");
-const path = require("path");
-// const PeerConnect = require("peer-connect")
+const express = require('express');
+const path = require('path');
+var favicon = require('serve-favicon');
+// const PeerConnect = require('peer-connect')
 
 // App setup
 const PORT = process.env.PORT || 3000;
@@ -8,6 +9,9 @@ const app = express();
 const server = app.listen(PORT, () =>
   console.log(`App listening on port ${PORT}...`)
 );
+
+// favicon
+app.use(favicon(path.join(__dirname, '/build/assets/images', 'favicon.ico')));
 
 // Serve static files
 app.use('/build', express.static(path.join(__dirname, '/build/')));
@@ -20,10 +24,10 @@ app.get('*', (req, res) => {
 
 // Allow for cross origin resource sharing
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
+  res.header('Access-Control-Allow-Origin', '*');
   res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
   );
   next();
 });
