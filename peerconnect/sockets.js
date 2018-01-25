@@ -60,7 +60,8 @@ let imageArray = Object.values(document.getElementsByTagName('img'));
 imageArray = imageArray.filter(node => node.hasAttribute('data-src'));
 let imageHeights;
 let imageSliceIndex;
-console.log(imageArray)
+const inViewportArray = [];
+
 // assign ids to image
 // imageArray.forEach((image, index) => image.setAttribute('id', index));
 
@@ -127,7 +128,10 @@ socket.on('create_receiver_peer', (initiatorData, assetTypes, foldLoading, image
   //if foldLoading is off || if foldLoading is on and image is not in view
   //send indeces of imageArray to request from initiator peer
   for (let i = 0; i < imageArray.length; i += 1) {
-    if ((!isElementInViewport(imageArray[i]) && configuration.foldLoading) || !configuration.foldLoading) {
+    inViewportArray.push(isElementInViewport(imageArray[i]))
+  }
+  for (let i = 0; i < imageArray.length; i += 1) {
+    if ((!inViewportArray[i] && configuration.foldLoading) || !configuration.foldLoading) {
       imageSliceIndex = i;
       break;
     }
@@ -290,13 +294,13 @@ function loopImage() {
     for (let i = 0; i < imageArray.length; i += 1) {
       const imageSource = imageArray[i].dataset.src;
       const extension = getImageType(imageArray[i]);
-      console.log(`${isElementInViewport(imageArray[i])} is: from ${i}`);
+      // console.log(`${inViewportArray[i]} is: from ${i}`);
       // const foldLoading = configuration.foldLoading ? isElementInViewport(imageArray[i]) : false;
       if (!configuration.assetTypes.includes(extension)) {
         extCounter += 1;
         setServerAsset(imageSource);
       }
-      if (configuration.foldLoading && isElementInViewport(imageArray[i])) {
+      if (configuration.foldLoading && inViewportArray[i]) {
         setServerAsset(imageSource);
       }
     }
@@ -308,12 +312,10 @@ function loopImage() {
 function setImage(imageData, imageArray, index) {
   console.log('Received all data for an image. Setting image.');
   counter += 1;
-  if ((!isElementInViewport(imageArray[index]) && configuration.foldLoading) || !configuration.foldLoading) {
-    console.log("ELEMENT VIEWPORT THING")
+  if ((!inViewportArray[index] && configuration.foldLoading) || !configuration.foldLoading) {
     if (imageData.slice(0, 9) === 'undefined') imageArray[index].src = imageData.slice(9);
     else imageArray[index].src = imageData;
   }
-  console.log(!isElementInViewport(imageArray[index]))
 }
 
 // preset images with sent heights
