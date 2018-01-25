@@ -1,7 +1,7 @@
 import './styles/app.less';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory, IndexRoute, Redirect } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 // Container
 import Container from './components/Container.jsx';
@@ -17,7 +17,7 @@ class Handler extends Component {
       <Router history={browserHistory}>
         <Route path="/" component={Container}>
           <IndexRoute component={Layout} />
-          <Route path="/demo" component={Demo} />
+          <Route path="demo" component={Demo} />
         </Route>
         <Route path="*" onEnter={() => browserHistory.push('/')} />
       </Router>
