@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 import Member from './Member.jsx';
 
 // Profile Images
-import profileMike from '../../assets/images/mike.jpg'
+import profileMike from '../../assets/images/mike.jpeg'
 import profileJustin from '../../assets/images/justin.png'
 import profileJim from '../../assets/images/jim.jpg'
 import profilePeter from '../../assets/images/peter.jpg'
@@ -15,7 +15,7 @@ const members = [
     name: 'Mike Gutierrez',
     title: 'Software Engineer',
     imgSrc: profileMike,
-    imgStyle: { top: '-20px' },
+    imgStyle: { top: '-30px', left: '-40px' },
     githubURL: 'https://github.com/mikegutierrez',
     linkedInURL: 'https://www.linkedin.com/in/mikegutierrez/'
   },
