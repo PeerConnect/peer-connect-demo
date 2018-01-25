@@ -27,7 +27,7 @@ class Campaign extends Component {
 
       function updateSeeds() {
         ;
-        that.setState({ seeds: torrent.wires.length , progress: torrent.progress });
+        that.setState({ seeds: torrent.wires.length, progress: torrent.progress });
       }
       setInterval(updateSeeds, 1000);
     }
@@ -50,17 +50,14 @@ class Campaign extends Component {
   }
 
   renderDemoContent() {
-    // onTorrent.bind(this);
-    // this.setState({ seeds: 1 });
-    // this.setState({seeds:50});
     return (
       <div id="campaign" className="center-content gradient">
-        <div className="demo-content-container section">
-          <div className="peer-info margin-left margin-right">
-            <div className="h3 fw-600 raleway margin-bottom">PEER INFO GOES HERE</div>
+        <div className="demo-content-container">
+          <div className="peer-info margin-left margin-right margin-bottom">
+            <div className="h3 fw-600 raleway">Sintel, the Durian Open Movie Project</div>
+            <div className="h4 margin-bottom">A Creative Commons Short Film</div>
             <div>Seeds: {this.state.seeds}</div>
             <div>Progress: {(this.state.progress * 100).toFixed(1)}%</div>
-            <div>Fact 3: if you don't like it, it's open source</div>
           </div>
           <div className="video-container margin-left margin-right">
             <div id="video-tag"></div>
