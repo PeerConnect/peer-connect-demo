@@ -9,7 +9,9 @@ const Footer = () =>
   (
     <div id="footer" className="bg-gr0 center-content">
       <img src={logo} />
-      <small className="text-gr3 margin-top">&copy; Copyright {currentYear} PeerConnect. All rights reserved.</small>
+      <small className="text-gr3 margin-top">
+        &copy; Copyright {currentYear} <a href="https://github.com/PeerConnect/peer-connect" target="_blank">PeerConnect</a>. Distributed under the <a href="https://github.com/PeerConnect/peer-connect/blob/master/LICENSE" target="_blank">MIT License</a>.
+      </small>
     </div>
   );
 
