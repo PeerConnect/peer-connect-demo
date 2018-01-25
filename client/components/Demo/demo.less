@@ -1,18 +1,23 @@
 #demo {
   flex-direction: column;
 
+  .demo-row {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .demo-stats {
+      width: auto;
+    }
+
+    img {
+      max-width: 32.5%;
+    }
+  }
+
   .demo-main {
     img {
       max-width: 100%;
     }
   }
 
-  .demo-row {
-    flex-direction: row;
-    justify-content: space-between;
-
-    img {
-      max-width: 32.5%;
-    }
-  }
 }

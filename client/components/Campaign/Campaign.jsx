@@ -15,6 +15,7 @@ class Campaign extends Component {
   }
 
   componentDidMount() {
+    console.log('MOUNT');
     const client = new WebTorrent();
     const torrentId = 'magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fsintel.torrent';
     function onTorrent(torrent) {
@@ -27,7 +28,7 @@ class Campaign extends Component {
 
       function updateSeeds() {
         ;
-        that.setState({ seeds: torrent.wires.length , progress: torrent.progress });
+        that.setState({ seeds: torrent.wires.length, progress: torrent.progress });
       }
       setInterval(updateSeeds, 1000);
     }
@@ -50,17 +51,14 @@ class Campaign extends Component {
   }
 
   renderDemoContent() {
-    // onTorrent.bind(this);
-    // this.setState({ seeds: 1 });
-    // this.setState({seeds:50});
     return (
       <div id="campaign" className="center-content gradient">
-        <div className="demo-content-container section">
-          <div className="peer-info margin-left margin-right">
-            <div className="h3 fw-600 raleway margin-bottom">PEER INFO GOES HERE</div>
+        <div className="demo-content-container">
+          <div className="peer-info margin-left margin-right margin-bottom">
+            <div className="h3 fw-600 raleway">Sintel, the Durian Open Movie Project</div>
+            <div className="h4 margin-bottom">A Creative Commons Short Film</div>
             <div>Seeds: {this.state.seeds}</div>
             <div>Progress: {(this.state.progress * 100).toFixed(1)}%</div>
-            <div>Fact 3: if you don't like it, it's open source</div>
           </div>
           <div className="video-container margin-left margin-right">
             <div id="video-tag"></div>
