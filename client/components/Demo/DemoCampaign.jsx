@@ -17,7 +17,7 @@ class DemoCampaign extends Component {
   }
   componentDidMount() {
     const script = document.createElement("script");
-    script.src = "https://unpkg.com/peer-connect-client@0.1.84/demo/bundle-demo.js";
+    script.src = "https://unpkg.com/peer-connect-client@0.1.9/demo/bundle-demo.js";
     script.async = true;
     document.body.appendChild(script);
 

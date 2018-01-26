@@ -1,7 +1,8 @@
 const express = require('express');
 const path = require('path');
 var favicon = require('serve-favicon');
-const PeerConnectServer = require('peer-connect-server')
+// const PeerConnectServer = require('peer-connect-server');
+const PeerConnectServer = require('./peerconnect/index.js');
 
 // App setup
 const PORT = process.env.PORT || 3000;
