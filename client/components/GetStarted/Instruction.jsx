@@ -10,7 +10,7 @@ class Instruction extends Component {
       <div className="instruction-bullet">
         <div className="instruction-icon-container">
           <img className="instruction-icon margin-right" src={check} />
-          <div className="h6 fw-400">{this.props.title}</div>
+          <div className="h6 fw-600">{this.props.title}</div>
         </div>
         <ul className="instruction-list">
           {
@@ -43,6 +43,16 @@ class Instruction extends Component {
               <pre>
                 <code>
                   {this.props.snippet3}
+                </code>
+              </pre>
+            </li>
+          }
+          {
+            this.props.snippet4 &&
+            <li className="code-block">
+              <pre>
+                <code>
+                  {this.props.snippet4}
                 </code>
               </pre>
             </li>
