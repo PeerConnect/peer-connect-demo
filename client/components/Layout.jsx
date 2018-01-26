@@ -7,12 +7,10 @@ import GetStarted from './GetStarted/GetStarted.jsx'
 import Features from './Features/Features.jsx'
 import Team from './Team/Team.jsx'
 import Footer from './Footer/Footer.jsx'
-// import VideoTest from './VideoTest.jsx'
 
 const Layout = () =>
   (
     <main>
-      {/* <VideoTest /> */}
       <Features />
       <GetStarted />
       <Team />
