@@ -35,6 +35,8 @@
     "nodemon": "^1.14.11",
     "path": "^0.12.7",
     "peer-connect": "^0.1.4",
+    "peer-connect-client": "^0.1.6",
+    "peer-connect-server": "^0.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^3.0.0",

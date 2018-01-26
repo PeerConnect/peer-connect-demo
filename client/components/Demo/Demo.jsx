@@ -16,13 +16,14 @@ const Demo = () =>
         <div className="demo-stats"><strong>Total Time: </strong><span className="margin-left-s">00ms</span></div>
       </div>
       <div className="demo-main margin-top margin-bottom">
-        <img src={elephant} />
+        <img data-src={elephant} />
       </div>
       <div className="demo-row">
-        <img src={rhino} className="margin-bottom" />
-        <img src={zebra} className="margin-bottom" />
-        <img src={lion} className="margin-bottom" />
+        <img data-src={rhino} className="margin-bottom" />
+        <img data-src={zebra} className="margin-bottom" />
+        <img data-src={lion} className="margin-bottom" />
       </div>
+      <script>console.log('hello') </script>
     </div>
   );
 
