@@ -7,6 +7,7 @@ import Footer from './Footer/Footer.jsx'
 import Campaign from './Campaign/Campaign.jsx'
 
 class Container extends Component {
+
   render() {
     return (
       <div id="container">
