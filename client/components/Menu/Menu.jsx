@@ -5,13 +5,8 @@ import { Link } from 'react-router'
 // Application components
 import Navigation from './Navigation.jsx';
 
-<<<<<<< HEAD
 // Assets
 import logo from '../../assets/images/pc-logo.svg';
-=======
-import logo from '../../assets/images/pc-logo.png';
-let counter = 0;
->>>>>>> 20019b6b55d47a65f7efb11042b7032ea954d753
 
 const Menu = () =>
   (
