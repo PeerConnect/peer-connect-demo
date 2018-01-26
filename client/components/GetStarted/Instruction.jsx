@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import AceEditor from 'react-ace';
 
+// Assets
 import check from '../../assets/images/check.png'
 
 class Instruction extends Component {
@@ -18,15 +20,33 @@ class Instruction extends Component {
           }
           {
             this.props.snippet1 &&
-            <li className="code-block">{this.props.snippet1}</li>
+            <li className="code-block">
+              <pre>
+                <code>
+                  {this.props.snippet1}
+                </code>
+              </pre>
+            </li>
           }
           {
             this.props.snippet2 &&
-            <li className="code-block">{this.props.snippet2}</li>
+            <li className="code-block">
+              <pre>
+                <code>
+                  {this.props.snippet2}
+                </code>
+              </pre>
+            </li>
           }
           {
             this.props.snippet3 &&
-            <li className="code-block">{this.props.snippet3}</li>
+            <li className="code-block">
+              <pre>
+                <code>
+                  {this.props.snippet3}
+                </code>
+              </pre>
+            </li>
           }
         </ul>
       </div>

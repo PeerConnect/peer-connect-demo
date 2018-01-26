@@ -7,6 +7,9 @@ class Navigation extends Component {
     return (
       <nav id="navigation" className="margin-right-xl">
         <ul className="fw-600">
+          <li>
+            <a class="github-button" href="https://github.com/PeerConnect/peer-connect" data-show-count="true">Star</a>
+          </li>
           {
             this.props.location === '/' &&
             <span>
@@ -21,7 +24,5 @@ class Navigation extends Component {
     );
   }
 }
-
-
 
 export default Navigation;
