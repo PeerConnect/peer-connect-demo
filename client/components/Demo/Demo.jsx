@@ -11,8 +11,8 @@ const Demo = () =>
   (
     <div id="demo" className="section">
       <div className="demo-row margin-top">
-        <div className="demo-stats" id="location-from"><strong>Recieved assets from: </strong><span className="margin-left-s"></span></div>
-        <div className="demo-stats" id="location-to"><strong>Sent assets to: </strong><span className="margin-left-s"></span></div>
+        <div className="demo-stats fw-600" id="location-from"><strong></strong><span className="margin-left-s"></span></div>
+        <div className="demo-stats fw-600" id="location-to"><strong></strong><span className="margin-left-s"></span></div>
         {/* <div className="demo-stats"><strong>Total Time: </strong><span className="margin-left-s">00ms</span></div> */}
       </div>
       <div className="demo-main margin-top margin-bottom">
