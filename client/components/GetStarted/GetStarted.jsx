@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 import Instruction from './Instruction.jsx';
 
 // Assets
-import graphic from '../../assets/images/pc-graphic.png'
+import graphic from '../../assets/images/pc-graphic.svg'
 
 const instructions = [
   {
@@ -70,7 +70,7 @@ class GetStarted extends Component {
           {this.renderInstructions()}
         </div>
         <div className="center-content instruction-graphic-container">
-          <img id="instruction-graphic" className="margin-left-xl" src={graphic} />
+          <img className="margin-left-xl" style={{ width: '300px' }} src={graphic} />
         </div>
       </div>
     );

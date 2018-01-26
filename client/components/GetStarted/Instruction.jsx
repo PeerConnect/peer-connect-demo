@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import AceEditor from 'react-ace';
 
 // Assets
 import check from '../../assets/images/check.png'
